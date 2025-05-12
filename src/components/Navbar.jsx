@@ -30,15 +30,13 @@ export default function Navbar() {
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center items-center">
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-12">
+          {/* Desktop Navigation - Fixed spacing */}
+          <div className="hidden md:flex items-center">
             {navItems.map((item, index) => (
               <Link 
                 key={item.name}
                 href={item.path}
-                className={`font-medium transition-colors text-gray-300 hover:text-white ${
-                  index === 1 ? 'mx-8' : ''
-                }`}
+                className="font-medium transition-colors text-gray-300 hover:text-white px-5"
               >
                 {item.name}
               </Link>

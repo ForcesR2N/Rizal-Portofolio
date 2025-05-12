@@ -17,7 +17,7 @@ export default function Home() {
             <div>
               <h3 className="text-cyan-400 font-mono text-lg mb-2">Halo, perkenalkan saya</h3>
               <h1 className="text-5xl sm:text-6xl font-bold leading-tight mb-2">
-                <span className="tracking-tight">Muhammad Rizal</span>
+                <span className="tracking-tight">Muhammad Zuhrizal</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl text-gray-300 font-light">
                 Software Engineer & ML Enthusiast

@@ -50,7 +50,7 @@ export default function Footer() {
           >
             Rizal<span className="text-white">.</span>
           </Link>
-          <p className="text-gray-400 mt-2">© {currentYear} Muhammad Rizal. All rights reserved.</p>
+          <p className="text-gray-400 mt-2">© {currentYear} Muhammad Zuhrizal. All rights reserved.</p>
         </div>
         
         <div className="flex space-x-6">

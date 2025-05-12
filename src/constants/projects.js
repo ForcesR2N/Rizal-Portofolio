@@ -9,7 +9,6 @@ export const projects = [
     ],
     image: '/projects/city-connect.jpg', // Add actual image path when available
     github: 'https://github.com/ForcesR2N/city-connect',
-    demo: '#',
     primaryColor: 'cyan' // Determines card accent color
   },
   {
