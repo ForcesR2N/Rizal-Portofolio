@@ -3,9 +3,9 @@
 
 export const projects = [
   {
-    id: 'city-connect',
-    title: 'City Connect',
-    description: 'Aplikasi mobile untuk memudahkan warga mengakses layanan publik dan melaporkan masalah infrastruktur kota.',
+    id: 'Growell-App',
+    title: 'Growell App',
+    description: 'Aplikasi Panduan Nutrisi Bayi',
     shortDescription: 'Platform pelaporan infrastruktur kota dan layanan publik',
     coverImage: '/api/placeholder/1200/600?text=City+Connect+Cover',
     thumbnailImage: '/api/placeholder/400/240?text=City+Connect',
@@ -16,11 +16,15 @@ export const projects = [
     client: 'Smart City Initiative',
     
     // Detail proyek
-    overview: `
-      City Connect adalah platform yang menghubungkan warga dengan pemerintah kota untuk mempercepat penanganan masalah perkotaan seperti jalan rusak, lampu jalan mati, atau masalah sampah. Aplikasi ini memiliki fitur pelaporan dengan geolokasi, pelacakan status laporan, dan notifikasi langsung dari pihak berwenang.
+    overview: [
+      "GroWell adalah aplikasi mobile yang dirancang khusus untuk membantu orang tua memantau dan mengelola nutrisi bayi mereka, khususnya untuk anak berusia 0-24 bulan. Aplikasi ini mengintegrasikan panduan medis WHO (World Health Organization) dengan teknologi modern untuk memberikan rekomendasi nutrisi yang personal dan akurat.",
       
-      Proyek ini bertujuan untuk meningkatkan partisipasi warga dalam pembangunan kota dan mempercepat respons pemerintah terhadap masalah infrastruktur.
-    `,
+      "Aplikasi ini lahir dari kebutuhan orang tua untuk memiliki panduan yang mudah diakses, akurat, dan personal dalam memberikan nutrisi terbaik bagi anak mereka. Dengan fokus pada fase-fase penting pertumbuhan bayi, mulai dari ASI eksklusif (0-6 bulan), pengenalan MPASI (6 bulan), variasi MPASI (7-12 bulan), hingga transisi ke makanan keluarga (13-24 bulan), GroWell hadir sebagai solusi digital yang comprehensive.",
+      
+      "Yang membuat GroWell unik adalah pendekatan personalisasinya - aplikasi ini tidak hanya memberikan informasi umum, tetapi menghitung kebutuhan nutrisi spesifik berdasarkan usia, berat badan, tingkat aktivitas, dan kondisi khusus bayi (seperti alergi). Setiap rekomendasi disesuaikan dengan karakteristik individu setiap bayi, sehingga orang tua mendapatkan panduan yang benar-benar relevan.",
+      
+      "Aplikasi ini juga sangat memperhatikan aspek edukatif, dengan informasi detail tentang pentingnya ASI eksklusif, cara pengenalan MPASI yang benar, dan tips praktis untuk memastikan bayi mendapatkan nutrisi yang optimal. GroWell tidak hanya menjadi aplikasi pencatat, tetapi juga menjadi pendamping edukasi bagi orang tua baru."
+    ],
     
     // Tags atau teknologi
     tags: [
@@ -31,24 +35,21 @@ export const projects = [
     // Fitur utama
     features: [
       {
-        title: "Pelaporan Cepat",
-        description: "Laporkan masalah infrastruktur kota dengan foto dan lokasi GPS dalam beberapa langkah sederhana.",
-        icon: "report" // Bisa digunakan untuk menentukan ikon
+        title: "Dashboard Profil Bayi Personal",
+        description: "Kelola profil bayi Anda dengan detail lengkap termasuk data usia, berat badan, jenis kelamin, dan tingkat aktivitas yang akan digunakan untuk perhitungan nutrisi personal.",
       },
       {
-        title: "Status Tracking",
-        description: "Lacak status laporan Anda dari submitted hingga resolved dengan timeline yang jelas.",
-        icon: "track"
+        title: "Tracking Nutrisi Harian",
+        description: "Lacak asupan makanan bayi Anda dengan mudah menggunakan database makanan lokal yang lengkap atau tambahkan makanan kustom dengan detail nutrisi yang akurat.",
       },
       {
-        title: "Notifikasi Real-time",
-        description: "Dapatkan pembaruan instan saat ada kemajuan pada laporan Anda.",
-        icon: "notification"
+        title: "Kalkulator Kebutuhan Nutrisi",
+        description: "Hitung otomatis kebutuhan kalori, protein, karbohidrat, lemak, dan mikronutrien berdasarkan usia dan berat badan bayi sesuai standar WHO.",
       },
       {
-        title: "Integrasi Layanan",
-        description: "Akses layanan publik seperti pembayaran pajak, pengajuan izin, dan informasi transportasi.",
-        icon: "integration"
+        title: "Panduan MPASI & ASI Eksklusif",
+        description: "Dapatkan panduan lengkap dari ASI eksklusif (0-6 bulan) hingga variasi MPASI (6-24 bulan) dengan rekomendasi makanan sesuai tahap perkembangan bayi.",
+ 
       }
     ],
     
@@ -57,9 +58,9 @@ export const projects = [
       "Flutter", 
       "Dart", 
       "Firebase", 
-      "Google Maps API", 
-      "Cloud Firestore", 
-      "Firebase Cloud Messaging"
+      "Authentication", 
+      "Cloud Storage", 
+      "Firestore"
     ],
     
     // Screenshot/Gallery - dapat berupa array path gambar atau objek dengan caption
@@ -111,28 +112,10 @@ export const projects = [
       { phase: "Launch", date: "Jun 2024", description: "Soft launch dan pengumpulan feedback awal" }
     ],
     
-    // Future plans
-    futurePlans: [
-      "Integrasi dengan sistem manajemen kota untuk pemrosesan laporan otomatis",
-      "Fitur komunitas untuk memungkinkan warga berkolaborasi menyelesaikan masalah lokal",
-      "Dashboard analitik untuk visualisasi tren laporan dan performa penanganan",
-      "Sistem penghargaan untuk mendorong partisipasi aktif warga"
-    ],
-    
     // Link eksternal
-    links: {
-      github: "https://github.com/ForcesR2N/city-connect",
+    links: {      github: "https://github.com/ForcesR2N/growell-app",
     },
     
-    // Testimonial (opsional)
-    testimonials: [
-      {
-        name: "Budi Santoso",
-        role: "Kepala Dinas Pekerjaan Umum",
-        quote: "City Connect telah membantu kami menerima dan mengelola lebih dari 500 laporan infrastruktur dalam sebulan pertama implementasi.",
-        image: "/api/placeholder/100/100?text=Budi"
-      }
-    ],
     
     // SEO metadata
     seo: {

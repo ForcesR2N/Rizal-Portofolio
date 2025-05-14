@@ -1,14 +1,14 @@
 export const projects = [
   {
-    id: 'city-connect',
-    title: 'City Connect',
-    description: 'Aplikasi mobile untuk memudahkan warga mengakses layanan publik dan melaporkan masalah infrastruktur kota.',
+    id: 'Growell-App',
+    title: 'Growell App',
+    description: 'Aplikasi Panduan Nutrisi Bayi',
     tags: [
       { name: 'Flutter', bg: 'bg-blue-500/20', textColor: 'text-blue-300' },
       { name: 'Mobile', bg: 'bg-indigo-500/20', textColor: 'text-indigo-300' }
     ],
     image: '/projects/city-connect.jpg', // Add actual image path when available
-    github: 'https://github.com/ForcesR2N/city-connect',
+    github: 'https://github.com/ForcesR2N/growell-app',
     primaryColor: 'cyan' // Determines card accent color
   },
   {

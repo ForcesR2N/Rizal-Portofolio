@@ -8,7 +8,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProjectFeature from '@/components/ProjectFeature';
 import TechnologyTag from '@/components/TechnologyTag';
-import ScreenshotGallery from '@/components/ScreenshotGallery';
+import AdaptiveScreenshotsGallery from '@/components/AdaptiveScreenshotsGallery';
 
 // Color mapping berdasarkan primaryColor
 const colorMap = {
@@ -164,33 +164,21 @@ export default function ProjectDetail({ params }) {
               GitHub Repository
             </a>
           )}
-          
-          {project.links.demo && (
-            <a 
-              href={project.links.demo} 
-              target="_blank"
-              className={`flex items-center gap-2 px-6 py-3 ${colors.button} rounded-lg transition-all duration-300 transform hover:scale-105`}
-              rel="noreferrer"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              Live Demo
-            </a>
-          )}
         </div>
         
-        {/* Overview */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Tentang Proyek</h2>
-          <div className="text-gray-300 leading-relaxed space-y-4">
-            {project.overview.split('\n\n').map((paragraph, idx) => (
-              <p key={idx}>{paragraph}</p>
-            ))}
-          </div>
-        </div>
+  <h2 className="text-2xl font-bold mb-4 border-b border-slate-700 pb-2">Tentang Proyek</h2>
+  <div className="text-gray-300 leading-relaxed space-y-4">
+    {Array.isArray(project.overview) 
+      ? project.overview.map((paragraph, idx) => (
+          <p key={idx}>{paragraph}</p>
+        ))
+      : project.overview.split('\n\n').map((paragraph, idx) => (
+          <p key={idx}>{paragraph}</p>
+        ))
+    }
+  </div>
+</div>
         
         {/* Features Section */}
         <div className="mb-12">
@@ -218,13 +206,18 @@ export default function ProjectDetail({ params }) {
           </div>
         </div>
         
-        {/* Screenshots/Gallery */}
-        {project.screenshots && project.screenshots.length > 0 && (
-          <div className="mb-12">
-            <h2 className="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Screenshots</h2>
-            <ScreenshotGallery screenshots={project.screenshots} />
-          </div>
-        )}
+       {/* Screenshots/Gallery */}
+{project.screenshots && project.screenshots.length > 0 && (
+  <div className="mb-12">
+    <h2 className="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Screenshots</h2>
+    <AdaptiveScreenshotsGallery 
+      screenshots={project.screenshots} 
+      projectTitle={project.title}
+      projectCategory={project.category}
+      projectType={project.primaryColor} // or any other project type indicator
+    />
+  </div>
+)}
         
         {/* Challenges & Solutions */}
         {project.challenges && project.challenges.length > 0 && (
