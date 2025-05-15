@@ -139,12 +139,16 @@ export const projects = [
     completionDate: '2025-05',
     client: 'Dibimbing',
     
-    overview: `
-      House Price Prediction adalah project machine learning yang menggunakan feature engineering untuk memprediksi harga properti. 
-      
-      Dengan menganalisis 538 data rumah, model ini berhasil mencapai akurassi 60.65% menggunakan Linear Regression
-    `,
-    
+    overview: ["Proyek prediksi harga rumah ini menggunakan teknik feature engineering yang komprehensif untuk meningkatkan akurasi model machine learning. Dengan mengolah data 538 properti, proyek ini berhasil mencapai akurasi 60.65% dalam memprediksi harga rumah.",
+
+"Proyek ini mendemonstrasikan:",
+"- Teknik data preprocessing dan outlier detection",
+"- Feature engineering tingkat lanjut (binary encoding, one-hot encoding, standardization)",
+"- Pembuatan fitur baru berdasarkan domain knowledge (luxury_score, size_category)",
+"- Evaluasi model yang mendalam dengan visualisasi",
+
+"Linear Regression model yang dibangun tidak mengalami overfitting dan menunjukkan performa yang stabil pada data testing, menjadikannya model yang dapat diandalkan untuk aplikasi real-world.,"
+    ], 
     tags: [
       { name: 'Machine learning', bg: 'bg-purple-500/20', textColor: 'text-purple-300' },
       { name: 'Web', bg: 'bg-orange-500/20', textColor: 'text-orange-300' }

@@ -220,7 +220,7 @@ export default function ProjectDetail({ params }) {
 )}
         
         {/* Challenges & Solutions */}
-        {project.challenges && project.challenges.length > 0 && (
+        {/* {project.challenges && project.challenges.length > 0 && (
           <div className="mb-12">
             <h2 className="text-2xl font-bold mb-6 border-b border-slate-700 pb-2">Tantangan & Solusi</h2>
             <div className="space-y-6">
@@ -235,7 +235,7 @@ export default function ProjectDetail({ params }) {
               ))}
             </div>
           </div>
-        )}
+        )} */}
         
         {/* Development Timeline */}
         {project.timeline && project.timeline.length > 0 && (
