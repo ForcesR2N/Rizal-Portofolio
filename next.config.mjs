@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/Rizal-Portofolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Rizal-Portofolio/' : '',
+  distDir: 'out',
+  assetPrefix: '/Rizal-Portofolio',
+  basePath: '/Rizal-Portofolio',
 };
 
 export default nextConfig;
