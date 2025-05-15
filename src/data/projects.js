@@ -127,79 +127,83 @@ export const projects = [
   
   // Proyek kedua
   {
-    id: 'quizzy-viz',
-    title: 'QuizzyViz',
-    description: 'Platform pembelajaran interaktif dengan visualisasi data untuk tracking kemajuan dan analisis performa pengguna.',
-    shortDescription: 'Platform pembelajaran dengan visualisasi data performa',
+    id: 'House-Price-Prediction-Machine-Learning',
+    title: 'House Price Prediction Machine Learning',
+    description: 'Model Machine Learning dengan 60.65% menggunakan feature engineering',
+    shortDescription: 'Prediksi harga rumah menggunakan machine learning dan feature engineering',
     coverImage: '/api/placeholder/1200/600?text=QuizzyViz+Cover',
     thumbnailImage: '/api/placeholder/400/240?text=QuizzyViz',
     category: 'Web App',
     primaryColor: 'purple',
     featured: true,
-    completionDate: '2024-04',
-    client: 'EdTech Startup',
+    completionDate: '2025-05',
+    client: 'Dibimbing',
     
     overview: `
-      QuizzyViz adalah platform pembelajaran yang membantu siswa dan pengajar memvisualisasikan progres belajar. Dengan analitik yang komprehensif, QuizzyViz memudahkan pengguna untuk mengidentifikasi area yang perlu ditingkatkan.
+      House Price Prediction adalah project machine learning yang menggunakan feature engineering untuk memprediksi harga properti. 
       
-      Platform ini dirancang untuk membantu meningkatkan retensi materi pembelajaran melalui metode gamifikasi dan visualisasi data yang menarik.
+      Dengan menganalisis 538 data rumah, model ini berhasil mencapai akurassi 60.65% menggunakan Linear Regression
     `,
     
     tags: [
-      { name: 'React', bg: 'bg-purple-500/20', textColor: 'text-purple-300' },
+      { name: 'Machine learning', bg: 'bg-purple-500/20', textColor: 'text-purple-300' },
       { name: 'Web', bg: 'bg-orange-500/20', textColor: 'text-orange-300' }
     ],
     
     features: [
       {
-        title: "Visualisasi Progres",
-        description: "Dashboard interaktif untuk melacak kemajuan pembelajaran dengan grafik dan chart yang informatif.",
-        icon: "chart"
-      },
-      {
-        title: "Quiz Generator",
-        description: "Pembuat kuis otomatis berdasarkan materi dan tingkat kesulitan yang dapat disesuaikan.",
+        title: "Advanced Feature Engineering",
+        description: "Mengimplementasikan teknik feature engineering seperti Z-score outlier detection, binary encoding, one-hot encoding, dan standardization untuk mempersiapkan data optimal.",
         icon: "quiz"
       },
       {
-        title: "Analisis Performa",
-        description: "Analisis mendalam tentang kekuatan dan kelemahan berdasarkan hasil kuis dan waktu studi.",
+        title: "Model Performance Optimization",
+        description: "Mencapai R² score 60.65% dengan Linear Regression yang stabil dan tidak overfitting. Model menunjukkan performa konsisten antara training dan testing data.",
         icon: "analysis"
       },
       {
-        title: "Kolaborasi Tim",
-        description: "Fitur untuk belajar bersama dan berkompetisi dalam grup untuk mendorong motivasi.",
-        icon: "team"
-      }
+        title: "Business Intelligence",
+        description: "Mengidentifikasi faktor-faktor kunci yang mempengaruhi harga rumah: ukuran properti, amenitas (AC, kamar tamu), dan lokasi strategis di jalan utama.",
+        icon: "Business"
+      },
+      {
+        title: "Data Visualization",
+        description: "Membuat visualisasi komprehensif untuk analisis eksplorasi data, evaluasi model, dan feature importance menggunakan matplotlib dan seaborn.",
+        icon: "chart"
+      },
     ],
     
     technologies: [
-      "React",
-      "Next.js", 
-      "TailwindCSS", 
-      "Chart.js", 
-      "Firebase", 
-      "Node.js",
-      "Express"
+      "Python",
+      "Scikit-Learn", 
+      "Pandas", 
+      "NumPy", 
+      "Matplotlib", 
+      "Seaborn",
+      "Jupyter Notebook"
     ],
     
     screenshots: [
       {
-        image: "/api/placeholder/800/600?text=Dashboard",
-        caption: "Dashboard Utama"
+        image: "/projects/house_price_prediction_ml/data_visualization.png",
+        caption: "Data Visualization"
       },
       {
-        image: "/api/placeholder/800/600?text=Quiz+Generator",
-        caption: "Quiz Generator"
+        image: "/projects/house_price_prediction_ml/feature_engineering_code.png",
+        caption: "Code Feature Engineering"
       },
       {
-        image: "/api/placeholder/800/600?text=Performance+Analysis",
-        caption: "Analisis Performa"
+        image: "/projects/house_price_prediction_ml/model_evaluation_plot.png",
+        caption: "Model Evaluation"
       },
       {
-        image: "/api/placeholder/800/600?text=Team+Collaboration",
-        caption: "Kolaborasi Tim"
-      }
+        image: "/projects/house_price_prediction_ml/top_10_importance_features.png",
+        caption: "Top 10 Importance Featues"
+      },
+      {
+        image: "/projects/house_price_prediction_ml/final_results.png",
+        caption: "Final Results"
+      },
     ],
     
     challenges: [
@@ -221,27 +225,11 @@ export const projects = [
       { phase: "Release", date: "Apr 2024", description: "Peluncuran versi 1.0" }
     ],
     
-    futurePlans: [
-      "Integrasi dengan platform pembelajaran populer seperti Moodle dan Google Classroom",
-      "Fitur AI untuk rekomendasi pembelajaran personal",
-      "Sistem ekspor data untuk analisis lebih lanjut",
-      "Aplikasi mobile untuk akses di perangkat iOS dan Android"
-    ],
-    
     links: {
       github: "https://github.com/ForcesR2N/quizzy-viz",
       demo: "https://quizzyviz-demo.example.com",
       website: "https://quizzyviz.example.com"
     },
-    
-    testimonials: [
-      {
-        name: "Dr. Rina Wijaya",
-        role: "Dosen Universitas Teknologi",
-        quote: "QuizzyViz membantu saya melacak pemahaman mahasiswa dengan cara yang belum pernah saya alami sebelumnya. Fitur analitiknya sangat membantu.",
-        image: "/api/placeholder/100/100?text=Dr.Rina"
-      }
-    ],
     
     seo: {
       title: "QuizzyViz - Platform Pembelajaran dengan Visualisasi Data",

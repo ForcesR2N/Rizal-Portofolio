@@ -12,8 +12,8 @@ export const projects = [
     primaryColor: 'cyan' // Determines card accent color
   },
   {
-    id: 'quizzy-viz',
-    title: 'QuizzyViz',
+    id: 'House-Price-Prediction-Machine-Learning',
+    title: 'House Price Prediction Machine Learning',
     description: 'Platform pembelajaran interaktif dengan visualisasi data untuk tracking kemajuan dan analisis performa pengguna.',
     tags: [
       { name: 'React', bg: 'bg-purple-500/20', textColor: 'text-purple-300' },
