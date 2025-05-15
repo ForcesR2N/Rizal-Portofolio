@@ -18,8 +18,8 @@ const socialLinks = [
   },
   { 
     name: 'LinkedIn', 
-    url: '#', // Update when available
-    username: 'Muhammad Rizal',
+    url: 'https://www.linkedin.com/in/muhammad-zuhrizal/', 
+    username: 'Muhammad Zuhrizal',
     color: 'from-blue-500 to-blue-700',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -32,8 +32,8 @@ const socialLinks = [
   },
   { 
     name: 'Instagram', 
-    url: '#', // Update when available
-    username: '@rizal_gram',
+    url: 'https://www.instagram.com/mhzhrizal/', 
+    username: '@mhzhrizal',
     color: 'from-pink-500 to-orange-400',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -46,8 +46,8 @@ const socialLinks = [
   },
   { 
     name: 'Email', 
-    url: 'mailto:youremail@example.com', // Update with your actual email
-    username: 'youremail@example.com', // Update with your actual email
+    url: 'muhammadzuhrizal07@gmail.com', // Update with your actual email
+    username: 'muhammadzuhrizal07@gmail.com', // Update with your actual email
     color: 'from-red-500 to-red-600',
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -66,9 +66,9 @@ export default function ConnectPage() {
       
       <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Let's Connect</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Let&apos;s Connect</h1>
           <p className="text-xl text-center text-gray-300 mb-12">
-            Temukan saya di platform berikut atau kirim email langsung untuk berdiskusi.
+            Lets connect dan grow up together.
           </p>
           
           <div className="grid md:grid-cols-2 gap-6">
