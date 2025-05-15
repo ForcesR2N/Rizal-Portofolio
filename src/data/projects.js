@@ -1,6 +1,3 @@
-// src/data/projects.js
-// Struktur data untuk proyek
-
 export const projects = [
   {
     id: 'Growell-App',
