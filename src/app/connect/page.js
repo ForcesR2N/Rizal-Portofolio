@@ -66,7 +66,7 @@ export default function ConnectPage() {
       
       <section className="pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Let&apos;s Connect</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Lets Connect</h1>
           <p className="text-xl text-center text-gray-300 mb-12">
             Lets connect dan grow up together.
           </p>
