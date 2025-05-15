@@ -14,13 +14,13 @@ export const projects = [
   {
     id: 'House-Price-Prediction-Machine-Learning',
     title: 'House Price Prediction Machine Learning',
-    description: 'Platform pembelajaran interaktif dengan visualisasi data untuk tracking kemajuan dan analisis performa pengguna.',
+    description: 'Prediksi harga rumah menggunakan machine learning dan feature engineering',
     tags: [
-      { name: 'React', bg: 'bg-purple-500/20', textColor: 'text-purple-300' },
+      { name: 'Machine Learning', bg: 'bg-purple-500/20', textColor: 'text-purple-300' },
       { name: 'Web', bg: 'bg-orange-500/20', textColor: 'text-orange-300' }
     ],
     image: '/projects/quizzy-viz.jpg', // Add actual image path when available
-    github: 'https://github.com/ForcesR2N/quizzy-viz',
+    github: 'https://github.com/ForcesR2N/house-price-prediction-ml.git',
     demo: '#',
     primaryColor: 'purple'
   },

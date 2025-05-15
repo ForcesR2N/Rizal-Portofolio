@@ -221,18 +221,16 @@ export const projects = [
       }
     ],
     
-    timeline: [
-      { phase: "Ideation", date: "Nov 2023", description: "Brainstorming dan riset pasar" },
-      { phase: "Design", date: "Dec 2023", description: "Wireframing dan UI/UX design" },
-      { phase: "Development", date: "Jan-Mar 2024", description: "Pengembangan frontend dan backend" },
-      { phase: "Beta Testing", date: "Mar 2024", description: "Pengujian dengan pengguna terbatas" },
-      { phase: "Release", date: "Apr 2024", description: "Peluncuran versi 1.0" }
+timeline: [
+      { phase: "Assignment Brief", date: "7 Mei 2025", description: "Penerimaan briefing tugas dan pemahaman requirements project" },
+      { phase: "Data Exploration", date: "8 Mei 2025", description: "Analisis dataset, pemahaman struktur data dan domain knowledge" },
+      { phase: "Data Preprocessing", date: "10 - 11 Mei 2025", description: "Outlier detection, data cleaning, dan eksplorasi mendalam" },
+      { phase: "Feature Engineering & Modeling", date: "12-14 Mei 2025", description: "Implementasi feature engineering, model training, dan evaluasi performa" },
+      { phase: "Project Deployment", date: "14 Mei 2025", description: "Dokumentasi lengkap dan publikasi di LinkedIn & GitHub" }
     ],
     
     links: {
-      github: "https://github.com/ForcesR2N/quizzy-viz",
-      demo: "https://quizzyviz-demo.example.com",
-      website: "https://quizzyviz.example.com"
+      github: "https://github.com/ForcesR2N/house-price-prediction-ml.git",
     },
     
     seo: {
