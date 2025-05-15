@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ProjectCard({ project }) {
@@ -69,12 +68,10 @@ export default function ProjectCard({ project }) {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-800 z-10"></div>
             {thumbnailImage ? (
               <div className="w-full h-full transform transition-transform duration-500 group-hover:scale-110">
-                <Image
-                  src={thumbnailImage}
+                <img
+                  src={`/Rizal-Portofolio${thumbnailImage}`}
                   alt={title}
                   className="w-full h-full object-cover"
-                  width={400}
-                  height={225}
                 />
               </div>
             ) : (

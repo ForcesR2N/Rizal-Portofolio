@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 
 // Single Row Horizontal Gallery
 function HorizontalScreenshotsGallery({ screenshots, projectTitle, projectCategory }) {
@@ -30,12 +29,10 @@ function HorizontalScreenshotsGallery({ screenshots, projectTitle, projectCatego
             <div className="mx-auto">
               <div className="relative bg-slate-900 rounded-3xl p-2 shadow-2xl">
                 <div className="relative overflow-hidden rounded-2xl" style={{ aspectRatio: '9/19.5', width: '220px' }}>
-                  <Image 
-                    src={activeScreenshot.image} 
+                  <img 
+                    src={`/Rizal-Portofolio${activeScreenshot.image}`}
                     alt={activeScreenshot.caption || projectTitle} 
-                    fill
-                    className="object-cover"
-                    priority
+                    className="w-full h-full object-cover"
                   />
                 </div>
                 {/* Phone notch/status bar */}
@@ -72,12 +69,10 @@ function HorizontalScreenshotsGallery({ screenshots, projectTitle, projectCatego
               {/* Screen Content */}
               <div className="relative bg-white rounded-b-lg overflow-hidden">
                 <div className="relative" style={{ aspectRatio: '16/10', height: '450px' }}>
-                  <Image 
-                    src={activeScreenshot.image} 
+                  <img 
+                    src={`/Rizal-Portofolio${activeScreenshot.image}`}
                     alt={activeScreenshot.caption || projectTitle} 
-                    fill
-                    className="object-contain"
-                    priority
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 
@@ -133,11 +128,10 @@ function HorizontalScreenshotsGallery({ screenshots, projectTitle, projectCatego
               onClick={() => setActiveIndex(index)}
             >
               <div className={`relative ${isMobile ? 'w-10 h-20' : 'w-28 h-18'}`}>
-                <Image 
-                  src={screenshot.image} 
+                <img 
+                  src={`/Rizal-Portofolio${screenshot.image}`}
                   alt={screenshot.caption || `Screenshot ${index + 1}`} 
-                  fill
-                  className="object-cover"
+                  className="w-full h-full object-cover rounded"
                 />
               </div>
             </div>

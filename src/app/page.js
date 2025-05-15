@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             
             <p className="text-gray-300 text-lg leading-relaxed">
-              Saya membuat aplikasi dan pengalaman digital yang berfokus pada performa, aksesibilitas, dan UI/UX yang menarik. Spesialisasi saya di Flutter dan React.
+              Currently focusing on machine learning and Flutter app development. I'm also deeply interested in AI, data science, and data analysis beyond my current work.
             </p>
             
             <div className="flex flex-wrap gap-4 justify-center">
